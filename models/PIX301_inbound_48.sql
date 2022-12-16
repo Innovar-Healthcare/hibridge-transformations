@@ -1,7 +1,26 @@
-with source as (
+with d_m48 as (
+	select
+		id,
+		processed
+	from `mirth_dw`.public.d_m48
 
-    select * from {{ source }}
+),
 
+d_mcm48 as (
+	select
+		message_id,
+		client_id
+	from `mirth_dw`.public.d_mcm48
+),
+
+d_mm48 as (
+	select
+		message_id,
+		received_date,
+		response_date,
+		connector_name,
+		error_code
+	from `mirth_dw`.public.d_mm48
 ),
 
 final as (
