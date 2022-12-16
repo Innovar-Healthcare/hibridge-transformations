@@ -28,4 +28,6 @@ models:
 
   XDS_Inbound_PIX309:
       materialized: view
-      
+
+  XDS_Inbound_PNR:
+      materialized: view
