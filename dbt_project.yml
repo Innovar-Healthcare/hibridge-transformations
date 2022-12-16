@@ -25,3 +25,7 @@ models:
 
   XDS_Inbound_PIX302:
       materialized: view
+
+  XDS_Inbound_PIX309:
+      materialized: view
+      
