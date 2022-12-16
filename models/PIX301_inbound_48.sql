@@ -1,4 +1,4 @@
-with d_m48 as (
+with source as (
 
     select * from {{ ref('d_m48') }}
 
