@@ -1,9 +1,9 @@
-name: 'XDS_Inbound_PIX301'
+name: 'CSL_Transforms'
 
 config-version: 2
 version: '0.1'
 
-profile: 'XDS_Inbound_PIX301'
+profile: 'CSL_Transforms'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -21,4 +21,7 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   XDS_Inbound_PIX301:
+      materialized: view
+
+  XDS_Inbound_PIX302:
       materialized: view
