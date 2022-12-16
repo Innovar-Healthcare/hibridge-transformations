@@ -1,3 +1,9 @@
+with d_m48 as (
+
+    select * from {{ ref('d_m48') }}
+
+),
+
 final as (
 
 	select DISTINCT 
