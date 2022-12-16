@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ ref('d_m48') }}
+    select * from {{ source }}
 
 ),
 
