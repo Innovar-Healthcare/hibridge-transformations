@@ -26,7 +26,7 @@ models:
       - name: error_code
         description: Message status
 
-name: PIX302_inbound_50
+  - name: PIX302_inbound_50
     description: This table contains the combined data for PIX302
 
     columns:
