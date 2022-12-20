@@ -100,3 +100,54 @@ models:
 
       - name: error_code
         description: Message status
+
+  - name: DQ_inbound_47
+    Description: This table contains the combined data for the inbound DQ
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: client_id
+        description: The name of the client who sent the message
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector
+        description: Destination connection
+
+      - name: error_code
+        description: Message status
+
+  - name: DR_inbound_43
+    Description: This table contains the combined data for the inbound DR
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: client_id
+        description: The name of the client who sent the message
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector
+        description: Destination connection
+
+      - name: error_code
+        description: Message status
+        
