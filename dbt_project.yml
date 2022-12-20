@@ -31,3 +31,12 @@ models:
 
   XDS_Inbound_PNR:
       materialized: view
+  
+  XDS_Inbound_DQ:
+      materialized: view
+
+  XDS_Inbound_DR:
+      materialized: view
+
+  XDS_Inbound_PNR:
+      materialized: view
