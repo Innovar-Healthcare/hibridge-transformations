@@ -175,4 +175,29 @@ models:
 
       - name: error_code
         description: Message status
+
+  - name: Registration_prefetch_75
+    Description: This table contains the combined data for the registration prefetch
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: client_id
+        description: The name of the client who sent the message
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector
+        description: Destination connection
+
+      - name: error_code
+        description: Message status
         

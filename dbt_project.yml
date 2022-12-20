@@ -40,3 +40,8 @@ models:
 
   XDS_Inbound_PNR:
       materialized: view
+
+  CSL_Registration_prefetch:
+      materialized: view
+
+      
