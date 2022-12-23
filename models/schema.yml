@@ -537,3 +537,56 @@ models:
 
       - name: error_code
         description: Message status   
+
+  - name: EDS_Drfirst_consumer_26
+    Description: This table contains the combined data for the Dr. First EDS Consumer
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: type
+        description: Calling ORG
+
+      - name: source
+        description: count of medication lookups
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status   
+
+  - name: EDS_Drfirst_outbound_27
+    Description: This table contains the combined data for the Dr. First EDS outbound
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: status
+        description: Calling ORG
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status   
