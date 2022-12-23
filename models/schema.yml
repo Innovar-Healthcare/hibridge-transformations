@@ -590,3 +590,59 @@ models:
 
       - name: error_code
         description: Message status   
+
+  - name: SFTP_Creekside_35
+    Description: This table contains the combined data for the Creekside SFTP
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: type
+        description: Calling ORG
+
+      - name: source
+        description: count of medication lookups
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status   
+
+  - name: SFTP_Lawrenceville_34
+    Description: This table contains the combined data for the Lawrenceville SFTP
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: type
+        description: Calling ORG
+
+      - name: source
+        description: count of medication lookups
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status         
