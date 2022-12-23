@@ -308,7 +308,32 @@ models:
         description: Message status        
 
   - name: Velatura_inbound_router_54
-    Description: This table contains the combined data for the Document Queries Outbound to Velatura
+    Description: This table contains the combined data for the Velatura inbound router
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: action
+        description: What kind of message
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status        
+
+  - name: Wellpath_inbound_router_57
+    Description: This table contains the combined data for the Wellpath Inbound Router
 
     columns:
       - name: id
