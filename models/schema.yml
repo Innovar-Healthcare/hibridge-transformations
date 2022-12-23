@@ -646,3 +646,25 @@ models:
 
       - name: error_code
         description: Message status         
+
+  - name: SFTP_Pediatrics_village_82
+    Description: This table contains the combined data for the Pediatrics Village SFTP
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status         
