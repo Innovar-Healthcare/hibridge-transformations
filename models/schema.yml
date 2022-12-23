@@ -405,4 +405,29 @@ models:
         description: Destination connection
 
       - name: error_code
+        description: Message status      
+
+  - name: DCBOH_inbound_router_96
+    Description: This table contains the combined data for the Dept of Corrections router
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: action
+        description: What kind of message
+
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
         description: Message status        
