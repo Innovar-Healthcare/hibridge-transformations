@@ -307,7 +307,7 @@ models:
       - name: error_code
         description: Message status        
 
-  - name: DQ_outbound_59
+  - name: Velatura_inbound_router_54
     Description: This table contains the combined data for the Document Queries Outbound to Velatura
 
     columns:
