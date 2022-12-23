@@ -279,3 +279,30 @@ models:
       - name: error_code
         description: Message status        
 
+   - name: DQ_outbound_59
+    Description: This table contains the combined data for the Document Queries Outbound to Velatura
+
+    columns:
+      - name: id
+        description: This is a unique identifier for each message
+
+      - name: processed
+        description: Whether the message has been processed
+
+      - name: received_date
+        description: When was the message received by this channel
+
+      - name: doc_errored
+        description: The how many docs errored out
+
+      - name: doc_returned
+        description: The number of docs returned/retrieved
+        
+      - name: response_date
+        description: Date a response was sent 
+
+      - name: connector_name
+        description: Destination connection
+
+      - name: error_code
+        description: Message status        
