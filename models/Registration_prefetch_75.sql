@@ -9,7 +9,7 @@ with d_m75 as (
 d_mcm75 as (
 	select
 		message_id,
-		client_id
+		client
 	from mirth_dw.public.d_mcm75
 ),
 
@@ -29,7 +29,7 @@ final as (
 	d_m75.id,
 	d_m75.processed,
 	d_mm75.received_date,
-	d_mcm75.client_id,
+	d_mcm75.client,
 	d_mm75.response_date,
 	d_mm75.connector_name, 
 	d_mm75.error_code
