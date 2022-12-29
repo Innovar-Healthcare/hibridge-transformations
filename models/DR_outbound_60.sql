@@ -30,8 +30,8 @@ final as (
 	d_m60.id,
 	d_m60.processed,
 	d_mm60.received_date,
-	d_mcm60.doc_errored,
-	d_mcm60.doc_returned, 
+	CAST(d_mcm60.doc_errored as numeric),
+	CAST(d_mcm60.doc_returned as numeric), 
 	d_mm60.response_date,
 	d_mm60.connector_name, 
 	d_mm60.error_code
@@ -42,4 +42,4 @@ final as (
 	on d_m60.id=d_mcm60.message_id
 )
 
-select  distinct * from final order by id
+select * from final 
