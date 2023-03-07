@@ -50,4 +50,4 @@ final as (
 	on d_m94.id=d_mcm94.message_id
 )
 
-select distinct * from final order by id
+select * from final order by id
