@@ -36,10 +36,11 @@ final as (
 	d_mm94.received_date,
 	d_mcm94."TYPE", 
 	d_mcm94.provider_id,
-	d_mcm94.sending_facility,
-	d_mcm94.receiving_facility,
-	d_mcm94.sending_application,
-	d_mcm94.receiving_application,
+	d_mcm94.provider_id,
+        d_mcm94.sending_facility,
+        d_mcm94.receiving_facility,
+        d_mcm94.sending_application,
+        d_mcm94.receiving_application,
 	d_mm94.response_date,
 	d_mm94.connector_name, 
 	d_mm94.error_code
@@ -50,4 +51,4 @@ final as (
 	on d_m94.id=d_mcm94.message_id
 )
 
-select * from final order by id
+select distinct * from final order by id
