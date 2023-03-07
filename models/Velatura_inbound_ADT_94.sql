@@ -2,7 +2,7 @@ with d_m94 as (
 	select
 		id,
 		processed
-	from mirth_dw.public.d_m54
+	from mirth_dw.public.d_m94
 
 ),
 
