@@ -8,14 +8,14 @@ with d_m94 as (
 
 d_mcm94 as (
 	select 
+		message_id,
 		"TYPE", 
 		provider_id,
 		sending_facility,
 		receiving_facility,
 		sending_application,
-		receiving_application,
-        message_id
-	       from mirth_dw.public.d_mcm94
+		receiving_application
+        from mirth_dw.public.d_mcm94
 ),
 
 d_mm94 as (
@@ -35,7 +35,6 @@ final as (
 	d_m94.processed,
 	d_mm94.received_date,
 	d_mcm94."TYPE", 
-	d_mcm94.provider_id,
 	d_mcm94.provider_id,
         d_mcm94.sending_facility,
         d_mcm94.receiving_facility,
