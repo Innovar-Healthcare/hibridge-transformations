@@ -9,7 +9,6 @@ with d_m94 as (
 d_mcm94 as (
 	select 
 		"TYPE", 
-		SOURCE,
 		provider_id,
 		sending_facility,
 		receiving_facility,
