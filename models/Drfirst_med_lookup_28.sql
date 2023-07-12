@@ -10,7 +10,8 @@ d_mcm28 as (
 	select 
               message_id,
 	      org,
-	      med_count
+	      med_count,
+		  username
 	       from mirth_dw.public.d_mcm28
 ),
 

@@ -448,6 +448,9 @@ models:
       - name: org
         description: Calling ORG
 
+      - name: username
+        description: Username that queried
+
       - name: med_count
         description: count of medication lookups
 
